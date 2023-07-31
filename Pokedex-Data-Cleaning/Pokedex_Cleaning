@@ -1,0 +1,22 @@
+## Finding the most and least common types of pokemon ##
+SELECT 
+  pokedex_number AS Dex_Number, 
+  pokemon_name AS Pokemon,
+  type_1,
+  type_2,
+
+FROM `arctic-analyzer-392401.pokedex_swsh.Pokedex` 
+
+WHERE
+  pokemon_name NOT LIKE '%Mega%' AND
+  pokemon_name NOT LIKE '%Totem%' AND
+  pokemon_name NOT LIKE '%Gmax%'AND
+  pokemon_name NOT LIKE '%Cap%' AND
+  pokemon_name NOT LIKE '%Star%'AND
+  pokemon_name NOT LIKE '%Cosplay%' AND
+  pokemon_name NOT LIKE '%Libre%' AND
+  pokemon_name NOT LIKE '%Phd%' AND
+  pokemon_name NOT LIKE '%Belle%'
+
+ORDER BY
+  Dex_Number
