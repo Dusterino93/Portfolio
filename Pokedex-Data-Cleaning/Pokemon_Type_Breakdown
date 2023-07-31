@@ -1,0 +1,145 @@
+SELECT
+  (SELECT 
+    COUNT(Pokemon)
+  FROM 
+    `arctic-analyzer-392401.pokedex_swsh.Pokedex_Cleaned` 
+
+  WHERE
+    type_1 = 'Fire' OR
+    type_2 = 'Fire') AS Fire, --Finding total # of pokemon with Fire type
+  (SELECT 
+    COUNT(Pokemon)
+  FROM 
+    `arctic-analyzer-392401.pokedex_swsh.Pokedex_Cleaned` 
+
+  WHERE
+    type_1 = 'Water' OR
+    type_2 = 'Water') AS Water, --Finding total # of pokemon with Water type
+  (SELECT 
+    COUNT(Pokemon)
+  FROM 
+    `arctic-analyzer-392401.pokedex_swsh.Pokedex_Cleaned` 
+
+  WHERE
+    type_1 = 'Grass' OR
+    type_2 = 'Grass') as Grass, --Finding total # of pokemon with Grass type
+  (SELECT 
+    COUNT(Pokemon)
+  FROM 
+    `arctic-analyzer-392401.pokedex_swsh.Pokedex_Cleaned` 
+
+  WHERE
+    type_1 = 'Ground' OR
+    type_2 = 'Ground') as Ground,
+  (SELECT 
+    COUNT(Pokemon)
+  FROM 
+    `arctic-analyzer-392401.pokedex_swsh.Pokedex_Cleaned` 
+
+  WHERE
+    type_1 = 'Rock' OR
+    type_2 = 'Rock') as Rock,
+  (SELECT 
+    COUNT(Pokemon)
+  FROM 
+    `arctic-analyzer-392401.pokedex_swsh.Pokedex_Cleaned` 
+
+  WHERE
+    type_1 = 'Bug' OR
+    type_2 = 'Bug') as Bug,
+  (SELECT 
+    COUNT(Pokemon)
+  FROM 
+    `arctic-analyzer-392401.pokedex_swsh.Pokedex_Cleaned` 
+
+  WHERE
+    type_1 = 'Electric' OR
+    type_2 = 'Electric') as Electric,
+  (SELECT 
+    COUNT(Pokemon)
+  FROM 
+    `arctic-analyzer-392401.pokedex_swsh.Pokedex_Cleaned` 
+
+  WHERE
+    type_1 = 'Steel' OR
+    type_2 = 'Steel') as Steel,
+  (SELECT 
+    COUNT(Pokemon)
+  FROM 
+    `arctic-analyzer-392401.pokedex_swsh.Pokedex_Cleaned` 
+
+  WHERE
+    type_1 = 'Psychic' OR
+    type_2 = 'Psychic') AS Psychic,
+  (SELECT 
+    COUNT(Pokemon)
+  FROM 
+    `arctic-analyzer-392401.pokedex_swsh.Pokedex_Cleaned` 
+
+  WHERE
+    type_1 = 'Dark' OR
+    type_2 = 'Dark') AS Dark,
+  (SELECT 
+    COUNT(Pokemon)
+  FROM 
+    `arctic-analyzer-392401.pokedex_swsh.Pokedex_Cleaned` 
+
+  WHERE
+    type_1 = 'Fairy' OR
+    type_2 = 'Fairy') AS Fairy,
+  (SELECT 
+    COUNT(Pokemon)
+  FROM 
+    `arctic-analyzer-392401.pokedex_swsh.Pokedex_Cleaned` 
+
+  WHERE
+    type_1 = 'Fighting' OR
+    type_2 = 'Fighting') AS Fighting,
+  (SELECT 
+    COUNT(Pokemon)
+  FROM 
+    `arctic-analyzer-392401.pokedex_swsh.Pokedex_Cleaned` 
+
+  WHERE
+    type_1 = 'Dragon' OR
+    type_2 = 'Dragon') AS Dragon,
+  (SELECT 
+    COUNT(Pokemon)
+  FROM 
+    `arctic-analyzer-392401.pokedex_swsh.Pokedex_Cleaned` 
+
+  WHERE
+    type_1 = 'Ice' OR
+    type_2 = 'Ice') AS Ice,
+  (SELECT 
+    COUNT(Pokemon)
+  FROM 
+    `arctic-analyzer-392401.pokedex_swsh.Pokedex_Cleaned` 
+
+  WHERE
+    type_1 = 'Normal' OR
+    type_2 = 'Normal') AS Normal,
+  (SELECT 
+    COUNT(Pokemon)
+  FROM 
+    `arctic-analyzer-392401.pokedex_swsh.Pokedex_Cleaned` 
+
+  WHERE
+    type_1 = 'Flying' OR
+    type_2 = 'Flying') AS Flying,
+  (SELECT 
+    COUNT(Pokemon)
+  FROM 
+    `arctic-analyzer-392401.pokedex_swsh.Pokedex_Cleaned` 
+
+  WHERE
+    type_1 = 'Ghost' OR
+    type_2 = 'Ghost') AS Ghost,
+  (SELECT 
+    COUNT(Pokemon)
+  FROM 
+    `arctic-analyzer-392401.pokedex_swsh.Pokedex_Cleaned` 
+
+  WHERE
+    type_1 = 'Poison' OR
+    type_2 = 'Poison') AS Poison
